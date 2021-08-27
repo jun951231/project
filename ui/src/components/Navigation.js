@@ -9,8 +9,8 @@ const Navigation = () => (<nav class="navi">
     <li><Link to='/login'>로그인</Link></li>
     <li><Link to='/join'>회원가입</Link></li>
     <li><Link to='/school-status'>학교 현황</Link></li>
-    <li><Link to='/FreeBoard'>자유게시판</Link></li>
-    <li><Link to='/Write'>글쓰기</Link></li>
+    
+    
 </ul>
 </nav>)
 

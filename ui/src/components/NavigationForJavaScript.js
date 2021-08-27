@@ -7,7 +7,8 @@ const NavigationForJavaScript = () => (
         <li><Link to='/basic'> Basic </Link></li>
         
     </ol>
-</nav>)
+</nav>
+)
 
 
 

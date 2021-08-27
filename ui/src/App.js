@@ -1,15 +1,16 @@
 import React from "react"
 import { Route, Redirect, Switch } from 'react-router-dom'
-import Navigation from './components/Navigation'
-import CourseRegister from './components/CourseRegister'
-import OnlineProfile from './components/OnlineProfile';
-import Join from './components/Join'
-import Login from './components/Login'
-import SchoolStatus from './components/SchoolStatus'
-import Home from './components/Home'
-
-import NavigationForJavaScript from './components/NavigationForJavaScript'
+import { CourseRegister,
+         OnlineProfile,
+         Join, 
+         Login, 
+         SchoolStatus, 
+         Navigation, 
+         NavigationCofin,
+         NavigationForJavaScript} from 'components/index'
+import { HomePage } from "pages/index"
 import Basic from "./modern-javascript/chap-01-basic/Basic"
+
 import ArrowFunction from "./modern-javascript/chap-02-arrow-function/ArrowFunction"
 import Arguments from "./modern-javascript/chap-03-arguments/Arguments"
 import TemplateLiteral from "./modern-javascript/chap-04-template-literal/TemplateLiteral"
@@ -33,14 +34,15 @@ import Es2019 from "./modern-javascript/chap-21-es2019/Es2019"
 import Es2020 from "./modern-javascript/chap-22-es2020/Es2020"
 import TypeScript from "./modern-javascript/chap-23-typescript/TypeScript"
 
-import FreeBoard from "./components/FreeBoard"
-import Write from "./components/Write"
+import { FreeBoard, Write } from 'cofin/index'
 
-import HomePage from "./pages/HomePage"
+
+
 
 const App = () => (
   <>
   <Navigation/>
+  <NavigationCofin/>
   <NavigationForJavaScript/>
     <Switch>
     <Route exact path='/' component= { HomePage }/>
@@ -51,8 +53,8 @@ const App = () => (
     <Route exact path='/join' component= { Join }/>
     <Route exact path='/school-status' component= { SchoolStatus }/>
 
-    <Route exact path='/FreeBoard' component= { FreeBoard }/>
-    <Route exact path='/Write' component= { Write }/>
+    <Route exact path='/cofin/FreeBoard' component= { FreeBoard }/>
+    <Route exact path='/cofin/Write' component= { Write }/>
 
     <Route exact path='/basic' component= { Basic }/>
 
