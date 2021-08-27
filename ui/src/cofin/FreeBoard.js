@@ -2,16 +2,16 @@ import React from "react"
 
 const FreeBoard = () =>(
     <div>
-        <ul>       
-            <li>
+        <ul >       
+            <li style-type='none'>
                 <label for="user-id"/>아이디
                 <input type="text" id="user-id"/>
             </li>
-            <li>    
+            <li style-type='none'>    
                 <label for="pwd1"/> 비밀번호
                 <input type="password" id="pwd"/>
             </li>
-            <li>
+            <li style-type='none'>
                 <input type="submit" value="로그인"/>
             </li>
         </ul>
