@@ -2,17 +2,15 @@ import React from "react"
 
 const FreeBoard = () =>(
     <div>
-        <ul >       
-            <li style-type='none'>
+        <ul>       
+            <li type='none' align='right'>
                 <label for="user-id"/>아이디
                 <input type="text" id="user-id"/>
-            </li>
-            <li style-type='none'>    
-                <label for="pwd1"/> 비밀번호
-                <input type="password" id="pwd"/>
-            </li>
-            <li style-type='none'>
-                <input type="submit" value="로그인"/>
+         
+                <label for="pwd1"/> 비밀번호 
+                <input type="password" id="pwd"/>&nbsp;
+                
+                <input type="submit" value="로그인"/>&nbsp;
             </li>
         </ul>
         <table border="1" width='1200' align='center'>

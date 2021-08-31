@@ -1,15 +1,11 @@
 import React from "react"
 import { Route, Redirect, Switch } from 'react-router-dom'
-import { CourseRegister,
-         OnlineProfile,
-         Join, 
-         Login, 
-         SchoolStatus, 
-         Navigation, 
-         NavigationCofin,
-         NavigationForJavaScript} from 'components/index'
+import { NavigationCofin } from 'components/index'
 import { HomePage } from "pages/index"
 import Basic from "./modern-javascript/chap-01-basic/Basic"
+
+import { CofinHome, FreeBoard, Write } from "components/index"
+
 
 import ArrowFunction from "./modern-javascript/chap-02-arrow-function/ArrowFunction"
 import Arguments from "./modern-javascript/chap-03-arguments/Arguments"
@@ -34,33 +30,21 @@ import Es2019 from "./modern-javascript/chap-21-es2019/Es2019"
 import Es2020 from "./modern-javascript/chap-22-es2020/Es2020"
 import TypeScript from "./modern-javascript/chap-23-typescript/TypeScript"
 
-import { FreeBoard, Write } from 'cofin/index'
+
 
 
 
 
 const App = () => (
   <>
-  <Navigation/>
+
   <NavigationCofin/>
-  <NavigationForJavaScript/>
+
     <Switch>
-    <Route exact path='/' component= { HomePage }/>
-    <Redirect from='/home' to= { '/' }/>
-    <Route exact path='/course-register' component= { CourseRegister }/>
-    <Route exact path='/online-profile' component= { OnlineProfile }/>
-    <Route exact path='/login' component= { Login }/>
-    <Route exact path='/join' component= { Join }/>
-    <Route exact path='/school-status' component= { SchoolStatus }/>
 
     <Route exact path='/cofin/FreeBoard' component= { FreeBoard }/>
     <Route exact path='/cofin/Write' component= { Write }/>
-
-    <Route exact path='/basic' component= { Basic }/>
-
-    <Route exact path='/HomePage' component = { HomePage}/>
-
-    
+    <Route exact path='/cofin/CofinHome' component= { CofinHome }/>
 
     </Switch></>
   )
@@ -69,6 +53,29 @@ const App = () => (
 export default App;
 
   /*
+  
+  CourseRegister,
+         OnlineProfile,
+         Join, 
+         Login, 
+         SchoolStatus, 
+         Navigation, 
+
+    <Route exact path='/' component= { HomePage }/>
+    <Redirect from='/home' to= { '/' }/>
+    <Route exact path='/course-register' component= { CourseRegister }/>
+    <Route exact path='/online-profile' component= { OnlineProfile }/>
+    <Route exact path='/login' component= { Login }/>
+    <Route exact path='/join' component= { Join }/>
+    <Route exact path='/school-status' component= { SchoolStatus }/>
+
+    
+    <Route exact path='/basic' component= { Basic }/>
+
+    <Route exact path='/HomePage' component = { HomePage}/>
+
+
+
     <Redirect from='/basic' to= { '/' }/>
     <Route exact path='/arrow-function' component= { ArrowFunction }/>
     <Route exact path='/arguments' component= { Arguments }/>
