@@ -1,0 +1,1 @@
+export { default as CofinHome } from 'home/components/CofinHome'

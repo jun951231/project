@@ -1,5 +1,5 @@
 import React from "react"
-import logo from '../images/cofin.png';
+import logo from '../images/virus.png';
 import logo2 from '../images/inform.jpg';
 import logo3 from '../images/world.png';
 import logo4 from '../images/piston.png'
@@ -20,7 +20,7 @@ const CofinHome = () => (
                 <input type="submit" value="로그인"/>&nbsp;
             </li>
         </ul>
-        <Body float="right">
+        <Body>
             <Ul id='navi' type='none'>
                 <Li class='group'>
                     <LogDiv class='title'><label>로그인</label></LogDiv>
@@ -30,35 +30,35 @@ const CofinHome = () => (
                     </Ultyp>
                 </Li>
                 <Li class='group'>
-                    <Divcla class="title">지도</Divcla>
+                    <MapDiv class="title">지도</MapDiv>
                     <Ultyp type='none' class="sub">
                         <Lisub><A href="#">국내지도</A></Lisub>
                         <Lisub><A href="#">세계지도</A></Lisub>
                     </Ultyp>
                 </Li>
                 <Li class='group'>
-                    <Divcla class="title">뉴스</Divcla>
+                    <NewsDiv class="title">뉴스</NewsDiv>
                     <Ultyp type='none' class="sub">
                         <Lisub><A href="#">코로나 국내 현황</A></Lisub>
                         <Lisub><A href="#">코로나 해외 현황</A></Lisub>
                     </Ultyp>
                 </Li>
                 <Li class='group'>
-                    <Divcla class="title">백신</Divcla>
+                    <VacDiv class="title">백신</VacDiv>
                     <Ultyp type='none' class="sub">
                         <Lisub><A href="#">백신 종류</A></Lisub>
                         <Lisub><A href="#">바이러스 변이 종류</A></Lisub>
                     </Ultyp>
                 </Li>
                 <Li class='group'>
-                    <Divcla class="title">게시판</Divcla>
+                    <BrdDiv class="title">게시판</BrdDiv>
                     <Ultyp type='none' class="sub">
                         <Lisub><A href="#">자유게시판</A></Lisub>
                         <Lisub><A href="#">신고게시판</A></Lisub>
                     </Ultyp>
                 </Li>
                 <Li class='group'>
-                    <Divcla class="title">설정</Divcla>
+                    <OpDiv class="title">설정</OpDiv>
                     <Ultyp type='none' class="sub">
                         <Lisub><A href="#">알림</A></Lisub>
                         <Lisub><A href="#">탈퇴</A></Lisub>
@@ -69,22 +69,22 @@ const CofinHome = () => (
         </Body>
     </div>
     <div align='center'>
-        <img src={logo} width="350" height="500"/>   
+        <img src={logo} width="750" height="750"/>   
     </div>
 
     <div align='center' >         
         <form>
             <button type="submit" class="subm">
-                <img src={logo2} width="150" height="150" border-radius='70%'/>&nbsp;
+                <img src={logo2} width="200" height="200" border-radius='70%'/>&nbsp;
             </button>
             <button type="submit" class="subm">
-                <img src={logo3} width="150" height="150"/>&nbsp;
+                <img src={logo3} width="200" height="200"/>&nbsp;
             </button>
             <button type="submit" class="subm">
-                <img src={logo4} width="150" height="150"/>&nbsp;
+                <img src={logo4} width="200" height="200"/>&nbsp;
             </button>
             <button type="submit" class="subm">
-                <img src={logo5} width="150" height="150"/>
+                <img src={logo5} width="200" height="200"/>
             </button>
         </form>
     </div>
@@ -92,11 +92,52 @@ const CofinHome = () => (
 )
 
 export default CofinHome
+
 const LogDiv = styled.div`
-    background-color: red;
+    margin-bottom: 2px;
+    height:35px;
+    line-height:35px;
+    color: #fff;
+    background-color: LightSkyBlue;
+`
+const MapDiv = styled.div`
+    margin-bottom: 2px;
+    height:35px;
+    line-height:35px;
+    color: #fff;
+    background-color: SkyBlue;
+`
+const VacDiv = styled.div`
+    margin-bottom: 2px;
+    height:35px;
+    line-height:35px;
+    color: #fff;
+    background-color: RoyalBlue;
+`
+const NewsDiv = styled.div`
+    margin-bottom: 2px;
+    height:35px;
+    line-height:35px;
+    color: #fff;
+    background-color: CornflowerBlue;
+`
+const BrdDiv = styled.div`
+    margin-bottom: 2px;
+    height:35px;
+    line-height:35px;
+    color: #fff;
+    background-color: DodgerBlue;
+`
+const OpDiv = styled.div`
+    margin-bottom: 2px;
+    height:35px;
+    line-height:35px;
+    color: #fff;
+    background-color: blue;
 `
 
 const Body = styled.div`
+    float: right;
     margin:20px auto;
     padding: 0;
     font-family:"맑은 고딕";
@@ -116,12 +157,6 @@ const Ultyp = styled.ul`
 
 const Li = styled.li `
     margin=bottom:3px
-`
-
-const Divcla = styled.div`
-    height: 35px
-    line-height: 35px
-    background-color: red;
 `
 
 const Lisub = styled.li`

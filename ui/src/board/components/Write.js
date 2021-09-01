@@ -12,14 +12,14 @@ const Write = () => (
             <tr>
                 <td width="50">
                     <select>                        
-                        <option>뉴스</option>
+                        <option>유머</option>
                         <option>잡담</option>
                         <option>확진자 발견</option>
                     </select>
                 </td>
                 <td align='center'>
                     <input type="text" placeholder="제목을 입력하시오"
-                    maxLength='20' width="100%"/>
+                    maxLength='20' cols="100"/>
                 </td>
             </tr>
             <tr height="750">
