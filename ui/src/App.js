@@ -2,7 +2,7 @@ import React from "react"
 import { Route, Redirect, Switch } from 'react-router-dom'
 
 import { CofinHome } from "home/index"
-import { FreeBoard, Write } from "board/index"
+import { FreeBoard, Write } from "board"
 import { NavigationCofin } from 'common/index'
 
 
@@ -10,7 +10,6 @@ const App = () => (
   <>
 
   <NavigationCofin/>
-
     <Switch>
     <Route exact path='/' component= { CofinHome }/>
     <Redirect from='/home' to= { '/' }/>
