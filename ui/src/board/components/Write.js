@@ -107,13 +107,10 @@ const Write = () => (<>
                                 <div class="note-control-horder note-control-se"></div>
                             </div>
                         </Note>
-                    </div>
-                    <textarea class="note-codable" role="textbox" aria-multiline="true"></textarea>
-                    <Block class="note-editable card-block" contenteditable="true" role="textbox" aria-muliline="true">
-                        <p>
-                            <br/>
-                        </p>
-                    </Block>
+                        <Textarea class="note-codable" role="textbox" aria-multiline="true"></Textarea>
+                        <Block role="textbox" aria-multiline="true">
+                        </Block>
+                    </div>                
                 </div>
                 </td>
             </div>
@@ -136,6 +133,12 @@ const Note = styled.div`
 
 const Block = styled.div`
     height:508.344px
+    class=note-editable card-block
+    contenteditable=true
+`
+
+const Textarea = styled.textarea`
+    resize:none;
 `
 
 const LogDiv = styled.div`
