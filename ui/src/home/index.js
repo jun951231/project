@@ -1,1 +1,1 @@
-export { default as CofinHome } from 'home/components/CofinHome'
+export { default as CofinHomepage } from "home/pages/CofinHomepage"

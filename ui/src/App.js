@@ -1,9 +1,11 @@
 import React from "react"
 import { Route, Redirect, Switch } from 'react-router-dom'
 
-import { CofinHome } from "home/index"
-import { FreeBoard, Write } from "board"
+import { CofinHomepage } from "home"
+import { FreeBoardpage } from "board"
+import { Writepage } from "board"
 import { NavigationCofin } from 'common/index'
+
 
 
 const App = () => (
@@ -11,10 +13,11 @@ const App = () => (
 
   <NavigationCofin/>
     <Switch>
-    <Route exact path='/' component= { CofinHome }/>
+    <Route exact path='/' component= { CofinHomepage }/>
     <Redirect from='/home' to= { '/' }/>
-    <Route exact path='/free-board' component= { FreeBoard }/>
-    <Route exact path='/write' component= { Write }/>
+    <Route exact path='/free-board' component= { FreeBoardpage }/>
+    <Route exact path='/write' component= { Writepage}/>
+
 
     </Switch></>
   )
