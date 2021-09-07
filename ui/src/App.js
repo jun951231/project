@@ -5,7 +5,7 @@ import { CofinHomepage } from "junil/home/index"
 import { FreeBoardpage, Writepage } from "junil/board/index"
 import { NavigationCofin } from 'junil/common/index'
 
-import {VaccineHR, Navi, CofinChartPage} from 'hyunsung/index';
+import {VaccineHR, CofinChartPage} from 'hyunsung/index';
 import VaccineResult from 'hyunsung/projects/VaccineResult';
 
 import { LocalMapPage, WorldMap, NavigationForJavaScript } from './sangho/index'
@@ -27,7 +27,7 @@ const App = () => (
 
   <NavigationForJavaScript/>
   <Switch>
-    <Route exact path='/cofin-chart' component={CofinChartPage}/>
+    <Route exact path='/cofin-chart' component={ CofinChartPage }/>
     <Route exact path='/vaccineHR' component={VaccineHR}/>
     <Route exact path='/vaccine-result' component={VaccineResult}/>
 
@@ -40,12 +40,6 @@ const App = () => (
 
 export default App;
 
-const Layout = styled.div`
-  margin: 0 auto;
-  display: flex;
-  width: 100%;
-  flex-flow: row wrap;
-  `
 
   /*
   

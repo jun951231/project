@@ -10,17 +10,7 @@ const CofinHomeMenu = () => (
                 <Img src={logo} width="80" height="80"></Img>
             </Button>
         </form> 
-        <ul>
-            <li type='none' align='right'>
-                <label for="user-id"/>아이디
-                <input type="text" id="user-id"/>
-         
-                <label for="pwd1"/> 비밀번호 
-                <input type="password" id="pwd"/>&nbsp;
-                
-                <input type="submit" value="로그인"/>&nbsp;
-            </li>
-        </ul>
+        
         <Body>
             <Ul id='navi' type='none'>
                 <Li class='group'>
@@ -56,6 +46,7 @@ const CofinHomeMenu = () => (
                     <Ultyp type='none' class="sub">
                         <Lisub><A href="free-board">자유게시판</A></Lisub>
                         <Lisub><A href="#">신고게시판</A></Lisub>
+                        <Lisub><A href="write">글쓰기</A></Lisub>
                     </Ultyp>
                 </Li>
                 <Li class='group'>

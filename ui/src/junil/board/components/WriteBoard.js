@@ -21,7 +21,7 @@ const WriteBoard = () => (<>
                 </td>
             </tr>
             <div class="note-editor note-frame car">
-                <td colSpan="2">
+                <td>
                 <Tool class="note-toolbar card-header" role="toolbar">
                     <div class="note-btn-group btn-group note-font">
                         <button type="button" class="note-btn btn btn-light btn-sm note-btn-strikethorough"
@@ -49,9 +49,8 @@ const WriteBoard = () => (<>
                                 <div class="note-control-horder note-control-se"></div>
                             </div>
                         </Note>
-                        <Textarea class="note-codable" role="textbox" aria-multiline="true"></Textarea>
-                        <Block role="textbox" aria-multiline="true">
-                        </Block>
+                        <Textarea ></Textarea>
+                        <Block role="textbox" aria-multiline="true"></Block>
                     </div>                
                 </div>
                 </td>
@@ -81,7 +80,9 @@ const Block = styled.div`
 `
 
 const Textarea = styled.textarea`
-    resize:none;
+    width: 1500px;
+    height: 500px;
+    resize: none;
 `
 
 const Tool = styled.div`
