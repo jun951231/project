@@ -11,8 +11,7 @@ const WriteBoard = () => (<>
             </tr>
             <tr>
                 <td width="50">
-                    <select>                        
-                        <option>유머</option>
+                    <select>                   
                         <option>잡담</option>
                         <option>확진자 발견</option>
                     </select>

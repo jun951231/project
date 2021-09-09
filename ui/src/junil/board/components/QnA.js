@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-const FreeBoard = () =>(
+const QnA = () =>(
     <div>
         <table border="1" width='1200' align='center'>
             <Free>
@@ -40,7 +40,7 @@ const FreeBoard = () =>(
 )            
 
 
-export default FreeBoard
+export default QnA
 
 
 

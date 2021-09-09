@@ -2,7 +2,7 @@ import React from "react"
 import { Route, Redirect, Switch } from 'react-router-dom'
 
 import { CofinHomepage } from "junil/home/index"
-import { FreeBoardpage, Writepage } from "junil/board/index"
+import { QnApage, Writepage } from "junil/board/index"
 import { NavigationCofin } from 'junil/common/index'
 
 import {VaccineHR, CofinChartPage} from 'hyunsung/index';
@@ -19,7 +19,7 @@ const App = () => (
   <Switch>
     <Route exact path='/' component= { CofinHomepage }/>
     <Redirect from='/home' to= { '/' }/>
-    <Route exact path='/free-board' component={ FreeBoardpage }/>
+    <Route exact path='/Q-n-A' component={ QnApage }/>
     <Route exact path='/write' component= { Writepage}/>
   </Switch>
   

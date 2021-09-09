@@ -47,7 +47,7 @@ const WriteMenu = () => (<>
                 <Li class='group'>
                     <BrdDiv class="title">게시판</BrdDiv>
                     <Ultyp type='none' class="sub">
-                        <Lisub><A href="free-board">자유게시판</A></Lisub>
+                        <Lisub><A href="Q-n-A">QnA게시판</A></Lisub>
                         <Lisub><A href="#">신고게시판</A></Lisub>
                         <Lisub><A href="write">글쓰기</A></Lisub>
                     </Ultyp>

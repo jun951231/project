@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-const FreeBoard = () =>(<>
+const QnAMenu = () =>(<>
     <div>
         <ul>       
             <li type='none' align='right'>
@@ -47,7 +47,7 @@ const FreeBoard = () =>(<>
                 <Li class='group'>
                     <BrdDiv class="title">게시판</BrdDiv>
                     <Ultyp type='none' class="sub">
-                        <Lisub><A href="free-board">자유게시판</A></Lisub>
+                        <Lisub><A href="Q-n-A">QnA게시판</A></Lisub>
                         <Lisub><A href="#">신고게시판</A></Lisub>
                         <Lisub><A href="write">글쓰기</A></Lisub>
                     </Ultyp>
@@ -66,7 +66,7 @@ const FreeBoard = () =>(<>
 </>)            
 
 
-export default FreeBoard
+export default QnAMenu
 
 
 const LogDiv = styled.div`
